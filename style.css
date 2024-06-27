@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.nav-link::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid white;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+h6 {
+    font-family: "Merienda", cursive;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.btn-container button {
+    width: 10rem;
+    padding: 8px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-container button:hover {
+    background-color: white;
+    box-shadow: 0 0 1rem white;
+    color: black;
+}
+
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* home */
+.home {
+    position: relative;
+    background-image: url('./gambar/homeimg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 87vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+}
+
+.text-home {
+    background-color: white;
+    padding: 50px;
+    gap: 1rem;
+    border-radius: 35px;
+    max-width: 700px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-home h2 {
+    font-family: "Merienda", cursive;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.about h2 {
+    font-family: "Merienda", cursive;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+.text-home .btn {
+    width: 210px;
+    padding: 10px 12px;
+    color: white;
+    background-color: #0D1A22;
+    transition: 0.3s linear;
+}
+
+.text-home .btn:hover {
+    color: black;
+    box-shadow: 0 0 1rem #0D1A22;
+    background-color: transparent;
+    border: 1px solid #0D1A22;
+}
+
+.about {
+    padding-top: 4rem;
+    background-color: #0D1A22;
+}
+
+.testimoni h2 {
+    font-family: "Merienda", cursive;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.testimoni .card {
+    border: 1px solid #0D1A22;
+    box-shadow: 0 0 1rem #0D1A22;
+}
+
+.about-text {
+    border-radius: 50px;
+    box-shadow: 0 0 1rem white;
+    width: 40%;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .text-home {
+        padding-top: 7rem;
+    }
+
+    .text-home h2 {
+        font-size: 25px;
+        margin-bottom: 1.5rem;
+    }
+
+    .about {
+        padding: 25px;
+    }
+
+    .about-text {
+        text-align: center;
+        width: 400px;
+        padding: 3rem;
+    }
+
+
+}

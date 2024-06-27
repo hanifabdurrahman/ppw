@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #0D1A22; box-shadow: 0 0 3rem #0D1A22;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
+        <img src="./gambar/golden.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+        <h6 class="fw-bold fs-4 text-light">Ayam Golden</h6>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5 active text-light" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5 text-light" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5 text-light" href="./menu2.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5 text-light" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="btn-container ms-auto d-flex gap-3">
+          <button type="button" class="fs-6 fw-bold rounded-pill btn " onclick="goLogin()">Login</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container sosmed">
+    <div class="social-media">
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <form>
+      <h2 class="fw-bold">Contact Us</h2>
+      <div class="mb-3">
+        <label for="exampleInputName1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleInputName1" aria-describedby="NameHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputMessage1" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleInputMessage1" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-light ">SEND</button>
+    </form>
+    <div class="container">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253010.03777779714!2d110.1288947328125!3d-7.759904899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599bd3bdc4ef%3A0x6f1714b0c4544586!2sUniversity%20of%20Amikom%20Yogyakarta!5e0!3m2!1sen!2sid!4v1719314421983!5m2!1sen!2sid"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+    <footer class="text-white pt-3 pb-3" style="background-color: #0D1A22;" id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Contact Information -->
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p>Ayam Golden</p>
+            <p>Jl. Contoh Alamat No. 123, Jakarta</p>
+            <p>Phone: +62 123 456 7890</p>
+            <p>Email: info@ayamgolden.com</p>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <a href="https://www.facebook.com" class="text-white me-2">Facebook</a>
+            <a href="https://www.instagram.com" class="text-white me-2">Instagram</a>
+            <a href="https://www.twitter.com" class="text-white">Twitter</a>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Home</a></li>
+              <li><a href="#" class="text-white">About</a></li>
+              <li><a href="#" class="text-white">Menu</a></li>
+              <li><a href="#" class="text-white">Order Online</a></li>
+              <li><a href="#" class="text-white">Contact</a></li>
+              <li><a href="#" class="text-white">FAQ</a></li>
+              <li><a href="#" class="text-white">Terms of Service</a></li>
+              <li><a href="#" class="text-white">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <h5>Jam Buka</h5>
+            <p>Senin - Jum'at : 8:00 AM - 8:00 PM</p>
+            <p>Sabtu - Minggu: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
+</div>
