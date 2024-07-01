@@ -1,6 +1,6 @@
-body {
-  font-family: Arial, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+
 
 .nav-link::after {
   content: '';
@@ -24,34 +24,20 @@ h6 {
   font-family: "Merienda", cursive;
 }
 
-.login button {
+
+.btn-container button {
   width: 10rem;
-  padding: 8px;
+  margin-top: 6px;
   color: white;
   background: transparent;
   border: 2px solid white;
   transition: 0.3s ease-in-out;
 }
 
-.login button:hover {
-  background-color: white;
-  color: black;
-}
-
-
-
-.btn {
-  width: 160px;
-  color: white;
-  background-color: transparent;
-  border: 2px solid white;
-  transition: 0.3s ease-in-out;
-}
-
-.btn:hover {
+.btn-container button:hover {
   color: black;
   box-shadow: 0 0 1rem white;
-  background-color: white;
+  background: white;
 }
 
 
@@ -63,14 +49,6 @@ h6 {
 
 .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.5);
-}
-
-.container {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-
-  border-radius: 8px;
 }
 
 .sosmed {

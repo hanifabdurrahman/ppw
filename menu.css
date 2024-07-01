@@ -7,7 +7,6 @@
 }
 
 
-
 .nav-link::after {
     content: '';
     display: block;
@@ -26,8 +25,57 @@
     font-weight: 600;
 }
 
-h6 {
+.nav-link .quantity {
+    font-size: 10px;
+    display: inline-block;
+    padding: 1px 5px;
+    background-color: red;
+    border-radius: 8px;
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+
+.cart-item img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.cart-item h5 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.item-detail .item-harga #remove,
+.item-detail .item-harga #add {
+    padding: 5px;
+    background-color: #0D1A22;
+    color: white;
+
+}
+
+.cart-item {
+    border-bottom: 1px solid #0D1A22;
+}
+
+.cart-item h5,
+.offcanvas-header h4,
+h6,
+.offcanvas-body h4 {
     font-family: "Merienda", cursive;
+
+}
+
+.offcanvas-body h4 {
+    margin-top: 1em;
+}
+
+.cart-item .btn {
+    border: none;
+    color: #0D1A22;
+    font-size: 2rem;
 }
 
 .login button {
@@ -45,6 +93,15 @@ h6 {
 }
 
 
+.item-harga .sampah {
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.item-harga .sampah:hover {
+    color: red;
+}
 
 .btn {
     width: 160px;
@@ -71,8 +128,19 @@ h6 {
     border-color: rgba(255, 255, 255, 0.5);
 }
 
-.navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+.cart-button button,
+.invoice button {
+    width: 10rem;
+    background-color: #0D1A22;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+
+.cart-button button:hover,
+.invoice button:hover {
+    color: black;
+    background-color: white;
 }
 
 .food h2,
